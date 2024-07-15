@@ -19,6 +19,7 @@ public class Job {
     private Integer maxSalary;
     private String location;
 
+
     public Job() {
     }
 
