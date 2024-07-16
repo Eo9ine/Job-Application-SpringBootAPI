@@ -6,6 +6,6 @@ public interface CompanyServiceModel {
     List<Company> findAll();
     Company findById(Integer id);
     void createCompany(Company company);
-    void deleteCompany(Integer id);
-    void updateCompany(Company company);
+    boolean deleteCompany(Integer id);
+    boolean updateCompany(Integer id,Company company);
 }

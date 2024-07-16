@@ -1,9 +1,7 @@
 package com.NDEV.Job.Application.job;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.NDEV.Job.Application.company.Company;
+import jakarta.persistence.*;
 
 import java.lang.reflect.Method;
 
@@ -19,6 +17,16 @@ public class Job {
     private Integer maxSalary;
     private String location;
 
+    @ManyToOne
+    private Company company;
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 
     public Job() {
     }

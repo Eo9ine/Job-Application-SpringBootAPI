@@ -1,6 +1,8 @@
 package com.NDEV.Job.Application.company;
 
 import com.NDEV.Job.Application.job.Job;
+import com.NDEV.Job.Application.reviews.Review;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -17,11 +19,20 @@ public class Company {
 
     private String description;
 
-    @OneToMany
+    @JsonIgnore
+    @OneToMany(mappedBy =  "company")
     private List<Job> jobs;
 
-    // private List<Review> review;
+    @OneToMany(mappedBy = "company")
+    private List<Review> review;
 
+    public List<Review> getReview() {
+        return review;
+    }
+
+    public void setReview(List<Review> review) {
+        this.review = review;
+    }
 
     public Company() {
     }
