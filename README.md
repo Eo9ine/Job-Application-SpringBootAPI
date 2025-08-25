@@ -7,7 +7,7 @@ A RESTful API built with Spring Boot to simulate the backend for a job applicati
 - **Framework:** Spring Boot 3.x
 - **Language:** Java 17
 - **Build Tool:** Maven
-- **Database:** H2 Database (Embedded)
+- **Database:** Postgresql (Embedded)
 - **Persistence:** Spring Data JPA
 - **Test:** Postman
 
@@ -18,15 +18,6 @@ A RESTful API built with Spring Boot to simulate the backend for a job applicati
 - **Embedded Database:** H2 in-memory database for easy testing
 - **RESTful Design:** Clean endpoint structure following REST conventions
 
-## 📌 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/applications` | Get all job applications |
-| `GET` | `/api/applications/{id}` | Get application by ID |
-| ``POST`` | `/api/applications` | Create new application |
-| `PUT` | `/api/applications/{id}` | Update application |
-| `DELETE` | `/api/applications/{id}` | Delete application |
 
 
 ## 🔨 Installation & Setup
@@ -45,5 +36,22 @@ A RESTful API built with Spring Boot to simulate the backend for a job applicati
   - ./mvnw spring-boot:run
 
 ## 🌐 Access Point
+  - API Base URL: http://localhost:8080/api
 
+## 🎯 Learning Objectives Achieved
+ - RESTful API design with Spring Boot
+
+ - Spring Data JPA and repository pattern
+
+ - Database management with H2
+
+ - API documentation with Springdoc OpenAPI
+
+ - CRUD operations implementation
+
+ - Request/response handling
+
+ - Project structure and package organization
+
+ - Build automation with Maven
 
