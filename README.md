@@ -36,7 +36,7 @@ A RESTful API built with Spring Boot to simulate the backend for a job applicati
   - ./mvnw spring-boot:run
 
 ## 🌐 Access Point
-  - API Base URL: http://localhost:8080/api
+  - API Base URL: http://localhost:8080/jobs
 
 ## 🎯 Learning Objectives Achieved
  - RESTful API design with Spring Boot
